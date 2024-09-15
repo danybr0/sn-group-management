@@ -3,7 +3,7 @@
         <create_roles/>
         <description/>
         <display_title>false</display_title>
-        <internal_name>group_members</internal_name>
+        <internal_name>add_group_members</internal_name>
         <layout>normal</layout>
         <name/>
         <order>100</order>
@@ -13,17 +13,17 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-09-14 21:54:43</sys_created_on>
         <sys_id>84f96303976012107b7bb12de053af98</sys_id>
-        <sys_mod_count>6</sys_mod_count>
-        <sys_name>Group Members</sys_name>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Add Group Members</sys_name>
         <sys_package display_value="SN Group Management" source="x_393895_sn_group">c995ae0e972012107b7bb12de053afc6</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN Group Management">c995ae0e972012107b7bb12de053afc6</sys_scope>
         <sys_update_name>item_option_new_set_84f96303976012107b7bb12de053af98</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-09-15 12:30:31</sys_updated_on>
-        <title>Group Members</title>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-09-15 14:19:27</sys_updated_on>
+        <title>Add Group Members</title>
         <type>one_to_many</type>
-        <version>6</version>
+        <version>9</version>
         <write_roles/>
     </item_option_new_set>
 </record_update>
