@@ -2,7 +2,7 @@
     <item_option_new action="INSERT_OR_UPDATE">
         <active>true</active>
         <attributes/>
-        <cat_item/>
+        <cat_item display_value="Remove Member from Group">93c300af97a452107b7bb12de053af22</cat_item>
         <category/>
         <choice_direction>down</choice_direction>
         <choice_field/>
@@ -37,17 +37,17 @@
         <lookup_value/>
         <macro/>
         <macroponent/>
-        <mandatory>true</mandatory>
+        <mandatory>false</mandatory>
         <map_to_field>false</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
-        <name>assignment_user</name>
-        <order>20</order>
+        <name>requested_for_rm</name>
+        <order>100</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
         <published_ref/>
-        <question_text>Members to Remove</question_text>
+        <question_text>Requested for</question_text>
         <read_only>false</read_only>
         <read_roles/>
         <read_script/>
@@ -56,8 +56,7 @@
         <record/>
         <record_producer_table/>
         <reference>sys_user</reference>
-        <reference_qual>javascript: new x_393895_sn_group.getMembers2().u_getMembers();&#13;
-</reference_qual>
+        <reference_qual/>
         <reference_qual_condition/>
         <rich_text/>
         <roles_to_use_also_request_for/>
@@ -76,26 +75,26 @@
         <summary_macro/>
         <sys_class_name>item_option_new</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-09-15 14:47:00</sys_created_on>
-        <sys_id>abdfcb5f97a052107b7bb12de053afae</sys_id>
-        <sys_mod_count>26</sys_mod_count>
-        <sys_name>Members to Remove</sys_name>
+        <sys_created_on>2024-09-15 18:27:23</sys_created_on>
+        <sys_id>b214c4af97a452107b7bb12de053afda</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Requested for</sys_name>
         <sys_package display_value="SN Group Management" source="x_393895_sn_group">c995ae0e972012107b7bb12de053afc6</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN Group Management">c995ae0e972012107b7bb12de053afc6</sys_scope>
-        <sys_update_name>item_option_new_abdfcb5f97a052107b7bb12de053afae</sys_update_name>
+        <sys_update_name>item_option_new_b214c4af97a452107b7bb12de053afda</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-09-26 20:22:01</sys_updated_on>
+        <sys_updated_on>2024-09-15 18:27:23</sys_updated_on>
         <table/>
         <tooltip/>
-        <type>8</type>
+        <type>31</type>
         <ui_page/>
         <unique>false</unique>
         <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>advanced</use_reference_qualifier>
+        <use_reference_qualifier>simple</use_reference_qualifier>
         <validate_regex/>
         <variable_name/>
-        <variable_set display_value="Remove Group Members">36bfc75f97a052107b7bb12de053afe3</variable_set>
+        <variable_set/>
         <variable_width/>
         <visibility>1</visibility>
         <visible_bundle>true</visible_bundle>
@@ -104,22 +103,22 @@
         <visible_summary>true</visible_summary>
         <write_roles/>
     </item_option_new>
-    <sys_translated_text action="delete_multiple" query="documentkey=abdfcb5f97a052107b7bb12de053afae"/>
-    <fx_price action="delete_multiple" query="id=abdfcb5f97a052107b7bb12de053afae"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=b214c4af97a452107b7bb12de053afda"/>
+    <fx_price action="delete_multiple" query="id=b214c4af97a452107b7bb12de053afda"/>
     <fx_price action="INSERT_OR_UPDATE">
         <amount>0</amount>
         <currency display_value="GBP">GBP</currency>
         <field>price_if_checked</field>
-        <id>abdfcb5f97a052107b7bb12de053afae</id>
+        <id>b214c4af97a452107b7bb12de053afda</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-09-15 14:47:01</sys_created_on>
-        <sys_id>21c1531397e052107b7bb12de053afa9</sys_id>
+        <sys_created_on>2024-09-15 18:27:23</sys_created_on>
+        <sys_id>fd3488af97a452107b7bb12de053af5c</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-09-15 14:47:01</sys_updated_on>
+        <sys_updated_on>2024-09-15 18:27:23</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>
@@ -127,16 +126,16 @@
         <amount>0</amount>
         <currency display_value="GBP">GBP</currency>
         <field>rec_price_if_checked</field>
-        <id>abdfcb5f97a052107b7bb12de053afae</id>
+        <id>b214c4af97a452107b7bb12de053afda</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-09-15 14:47:01</sys_created_on>
-        <sys_id>21c1531397e052107b7bb12de053afa8</sys_id>
+        <sys_created_on>2024-09-15 18:27:23</sys_created_on>
+        <sys_id>753488af97a452107b7bb12de053af5c</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-09-15 14:47:01</sys_updated_on>
+        <sys_updated_on>2024-09-15 18:27:23</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>
