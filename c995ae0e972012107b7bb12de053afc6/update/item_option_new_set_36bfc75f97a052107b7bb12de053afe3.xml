@@ -13,17 +13,17 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-09-15 14:38:18</sys_created_on>
         <sys_id>36bfc75f97a052107b7bb12de053afe3</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_name>Remove Group Members</sys_name>
         <sys_package display_value="SN Group Management" source="x_393895_sn_group">c995ae0e972012107b7bb12de053afc6</sys_package>
         <sys_policy/>
         <sys_scope display_value="SN Group Management">c995ae0e972012107b7bb12de053afc6</sys_scope>
         <sys_update_name>item_option_new_set_36bfc75f97a052107b7bb12de053afe3</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2024-09-15 14:51:15</sys_updated_on>
+        <sys_updated_on>2024-09-26 20:22:01</sys_updated_on>
         <title>Remove Group Members</title>
         <type>one_to_many</type>
-        <version>2</version>
+        <version>28</version>
         <write_roles/>
     </item_option_new_set>
 </record_update>
