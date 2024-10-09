@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <copied_from/>
+        <description>Save &amp; confirm that current row is successfully saved to multi-row variable set.</description>
+        <display_name>Save current row of multi-row variable set (SP)</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>9</order>
+        <step_config display_value="Save current row of multi-row variable set (SP)">adf6884273902300688e0d573cf6a72a</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-06 21:35:41</sys_created_on>
+        <sys_id>88b87496978952107b7bb12de053af61</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Save current row of multi-row variable set (SP)</sys_name>
+        <sys_package display_value="SN Group Management" source="x_393895_sn_group">c995ae0e972012107b7bb12de053afc6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SN Group Management">c995ae0e972012107b7bb12de053afc6</sys_scope>
+        <sys_update_name>sys_atf_step_88b87496978952107b7bb12de053af61</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-06 21:35:41</sys_updated_on>
+        <table/>
+        <test display_value="Test Multi-Row Variable Set (SP) - Add Group Members">20853892978952107b7bb12de053af96</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="delete_multiple" query="document_key=88b87496978952107b7bb12de053af61"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>88b87496978952107b7bb12de053af61</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-06 21:35:41</sys_created_on>
+        <sys_id>b0b8b096978952107b7bb12de053af90</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-06 21:35:41</sys_updated_on>
+        <value>form_submitted_to_server</value>
+        <variable display_value="Assert Type">7f15580673902300688e0d573cf6a795</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_atf_input_variable_adf6884273902300688e0d573cf6a72a^id=88b87496978952107b7bb12de053af61"/>
+</record_update>

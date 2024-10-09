@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_test_suite">
+    <sys_atf_test_suite action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <input_filter table="sys_atf_test">nameSTARTSWITHSN Group Management Tests^EQ<item endquery="false" field="name" goto="false" newquery="false" operator="STARTSWITH" or="false" value="SN Group Management Tests"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </input_filter>
+        <name>SN Group Management Tests</name>
+        <parent/>
+        <sn_atf_tg_generated>false</sn_atf_tg_generated>
+        <sys_class_name>sys_atf_test_suite</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-06 21:15:44</sys_created_on>
+        <sys_id>e5047012978952107b7bb12de053af15</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SN Group Management Tests</sys_name>
+        <sys_package display_value="SN Group Management" source="x_393895_sn_group">c995ae0e972012107b7bb12de053afc6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SN Group Management">c995ae0e972012107b7bb12de053afc6</sys_scope>
+        <sys_update_name>sys_atf_test_suite_e5047012978952107b7bb12de053af15</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-06 21:15:44</sys_updated_on>
+    </sys_atf_test_suite>
+</record_update>
