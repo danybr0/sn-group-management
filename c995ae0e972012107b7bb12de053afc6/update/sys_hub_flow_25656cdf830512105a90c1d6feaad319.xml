@@ -1,0 +1,1293 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <attributes>browserActivatedIn=firefox,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>25000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>sn_group_management_flow</internal_name>
+        <label_cache>[{"name":"Service Catalog_1.request_item","label":"Trigger - Service Catalog➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","usedInstances":{"81bf0fe9-c2ec-4c0c-9059-e42876068546":["requested_item"],"f59fd935-e78e-4ea3-a5c3-4c040da21970":["record"],"ff1833c7-5343-4187-9a85-0ce5d784c744":["record"],"a8f6370d-0dae-422e-aec5-8627dfb79fb7":["record"],"ed798f41-a6da-49ea-99dc-7780446e66c8":["record"],"a0299131-e74a-4b73-b886-b88b80b5883b":["request_item"]},"attributes":{"default_search_field":"number"}},{"name":"81bf0fe9-c2ec-4c0c-9059-e42876068546.u_create_update_grp","label":"1 - Get Catalog Variables➛u_create_update_grp","reference":"","reference_display":"u_create_update_grp","type":"choice","base_type":"choice","choices":[{"label":"Create","value":"u_create_grp","order":100.0},{"label":"Update","value":"u_update_grp","order":100.0}],"usedInstances":{"e45dbe5c-31e0-48f3-b813-cb93efc07901":["condition"]},"attributes":{"catalogType":"5","catalogTypeLabel":"Select Box"}},{"name":"81bf0fe9-c2ec-4c0c-9059-e42876068546.u_manager","label":"1 - Get Catalog Variables➛u_manager","reference":"sys_user","reference_display":"u_manager","type":"reference","base_type":"reference","usedInstances":{"f59fd935-e78e-4ea3-a5c3-4c040da21970":["approval_conditions"]},"attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"f59fd935-e78e-4ea3-a5c3-4c040da21970.approval_state","label":"3 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"4c084a9c-c9f4-4124-803d-55bbd6525d88":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"81bf0fe9-c2ec-4c0c-9059-e42876068546.u_grp_type","label":"1 - Get Catalog Variables➛u_grp_type","reference":"sys_user_group_type","reference_display":"u_grp_type","type":"glide_list","base_type":"glide_list","usedInstances":{"4302f208-b7ff-4584-b7d7-685299212260":["condition"]},"attributes":{"catalogType":"21","catalogTypeLabel":"List Collector"}},{"name":"{{static.a715cd759f2002002920bde8132e7018}}","label":"Change Management","reference":"sys_user_group","type":"reference","base_type":"reference","usedInstances":{"a8f6370d-0dae-422e-aec5-8627dfb79fb7":["approval_conditions"]}},{"name":"a8f6370d-0dae-422e-aec5-8627dfb79fb7.approval_state","label":"8 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"a2846c6f-229e-41e4-bf7d-69e203b22be1":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>SN Group Management Flow</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 22:45:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>25656cdf830512105a90c1d6feaad319</sys_id>
+        <sys_mod_count>53</sys_mod_count>
+        <sys_name>SN Group Management Flow</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SN Group Management" source="x_393895_sn_group">c995ae0e972012107b7bb12de053afc6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SN Group Management">c995ae0e972012107b7bb12de053afc6</sys_scope>
+        <sys_update_name>sys_hub_flow_25656cdf830512105a90c1d6feaad319</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-10 00:58:35</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=25656cdf830512105a90c1d6feaad319"/>
+    <sys_variable_value action="delete_multiple" query="document_key=25656cdf830512105a90c1d6feaad319"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=25656cdf830512105a90c1d6feaad319^sys_idNOT IN31f52cdb830512105a90c1d6feaad3f0"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment>When 'SN Group Management' item is requested</comment>
+        <display_text/>
+        <flow display_value="SN Group Management Flow">25656cdf830512105a90c1d6feaad319</flow>
+        <name>Service Catalog</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 22:47:45</sys_created_on>
+        <sys_id>31f52cdb830512105a90c1d6feaad3f0</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-10 00:58:34</sys_updated_on>
+        <trigger_definition display_value="Service Catalog">c43a1011c36813002841b63b12d3ae15</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>service_catalog</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=31f52cdb830512105a90c1d6feaad3f0"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=25656cdf830512105a90c1d6feaad319"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=25656cdf830512105a90c1d6feaad319^sys_idNOT IN65656cdf830512105a90c1d6feaad31b"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>25656cdf830512105a90c1d6feaad319</id>
+        <name>SN Group Management Flow</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 22:45:17</sys_created_on>
+        <sys_id>65656cdf830512105a90c1d6feaad31b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-09 22:45:17</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=65656cdf830512105a90c1d6feaad31b"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=25656cdf830512105a90c1d6feaad319^sys_idNOT INc2e3c19783c512105a90c1d6feaad321,c6e3c19783c512105a90c1d6feaad329"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>default_search_field=number,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>request_item</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Request Item</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="SN Group Management Flow">25656cdf830512105a90c1d6feaad319</model>
+        <model_id>25656cdf830512105a90c1d6feaad319</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_25656cdf830512105a90c1d6feaad319</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_req_item">sc_req_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-10 00:58:34</sys_created_on>
+        <sys_id>c2e3c19783c512105a90c1d6feaad321</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SN Group Management">c995ae0e972012107b7bb12de053afc6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-10 00:58:34</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c2e3c19783c512105a90c1d6feaad321"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>sc_req_item</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="SN Group Management Flow">25656cdf830512105a90c1d6feaad319</model>
+        <model_id>25656cdf830512105a90c1d6feaad319</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_25656cdf830512105a90c1d6feaad319</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-10 00:58:34</sys_created_on>
+        <sys_id>c6e3c19783c512105a90c1d6feaad329</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SN Group Management">c995ae0e972012107b7bb12de053afc6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-10 00:58:34</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c6e3c19783c512105a90c1d6feaad329"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=25656cdf830512105a90c1d6feaad319"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=25656cdf830512105a90c1d6feaad319"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=25656cdf830512105a90c1d6feaad319^sys_idNOT IN1d266053834512105a90c1d6feaad350,4f9f245f834512105a90c1d6feaad360,9218e8d3834512105a90c1d6feaad363,9827e853834512105a90c1d6feaad3b9,e044bc53838512105a90c1d6feaad3d5,f2257417838512105a90c1d6feaad305"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Get Catalog Variables">330ba3abc31013002841b63b12d3aee8</action_type>
+        <action_type_parent display_value="Get Catalog Variables">22f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment>Get all vars from 'SN Group Management' item</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="SN Group Management Flow">25656cdf830512105a90c1d6feaad319</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 22:48:32</sys_created_on>
+        <sys_id>1d266053834512105a90c1d6feaad350</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="SN Group Management">c995ae0e972012107b7bb12de053afc6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-10 00:58:35</sys_updated_on>
+        <ui_id>81bf0fe9-c2ec-4c0c-9059-e42876068546</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=1d266053834512105a90c1d6feaad350"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>1d266053834512105a90c1d6feaad350</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 22:49:29</sys_created_on>
+        <sys_id>83566853834512105a90c1d6feaad348</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-09 22:49:29</sys_updated_on>
+        <value>f000901783c112105a90c1d6feaad384:item_option_new,cf02d49783c112105a90c1d6feaad332:item_option_new,cd89d413830512105a90c1d6feaad3d0:item_option_new,ab6a9053830512105a90c1d6feaad3a1:item_option_new,66ea1053830512105a90c1d6feaad383:item_option_new,606b1893830512105a90c1d6feaad38d:item_option_new,ae9cd0d3830512105a90c1d6feaad310:item_option_new,215dd0d3830512105a90c1d6feaad340:item_option_new,e63f98d7830512105a90c1d6feaad3b1:item_option_new,d2dd9097830512105a90c1d6feaad365:item_option_new,a93e10d7830512105a90c1d6feaad3ad:item_option_new,69bfd41b830512105a90c1d6feaad335:item_option_new,cd70a85b830512105a90c1d6feaad3cc:item_option_new</value>
+        <variable display_value="Catalog Variables">7b0ba3abc31013002841b63b12d3aef7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>1d266053834512105a90c1d6feaad350</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 22:49:29</sys_created_on>
+        <sys_id>cb566853834512105a90c1d6feaad348</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-10 00:58:35</sys_updated_on>
+        <value>272fcc9383c112105a90c1d6feaad371</value>
+        <variable display_value="Template Catalog Items and Variable Sets">bb0ba3abc31013002841b63b12d3aef1</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=1d266053834512105a90c1d6feaad350"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>catalog_variables</field>
+        <id>1d266053834512105a90c1d6feaad350</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 22:49:29</sys_created_on>
+        <sys_id>47566853834512105a90c1d6feaad347</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-09 22:49:29</sys_updated_on>
+        <table>var__m_sys_hub_action_input_330ba3abc31013002841b63b12d3aee8</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>requested_item</field>
+        <id>1d266053834512105a90c1d6feaad350</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 22:49:29</sys_created_on>
+        <sys_id>03566853834512105a90c1d6feaad348</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-09 22:49:29</sys_updated_on>
+        <table>var__m_sys_hub_action_input_330ba3abc31013002841b63b12d3aee8</table>
+        <value>{{Service Catalog_1.request_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>template_catalog_item</field>
+        <id>1d266053834512105a90c1d6feaad350</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 22:49:29</sys_created_on>
+        <sys_id>4f566853834512105a90c1d6feaad347</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-09 22:49:29</sys_updated_on>
+        <table>var__m_sys_hub_action_input_330ba3abc31013002841b63b12d3aee8</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=1d266053834512105a90c1d6feaad350"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=1d266053834512105a90c1d6feaad350"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment>Request Change Management Group</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="SN Group Management Flow">25656cdf830512105a90c1d6feaad319</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id>4302f208-b7ff-4584-b7d7-685299212260</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 23:29:54</sys_created_on>
+        <sys_id>4f9f245f834512105a90c1d6feaad360</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="SN Group Management">c995ae0e972012107b7bb12de053afc6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-10 00:58:35</sys_updated_on>
+        <ui_id>a8f6370d-0dae-422e-aec5-8627dfb79fb7</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4f9f245f834512105a90c1d6feaad360"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4f9f245f834512105a90c1d6feaad360</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 23:31:22</sys_created_on>
+        <sys_id>20ff205f834512105a90c1d6feaad3c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-09 23:31:22</sys_updated_on>
+        <value/>
+        <variable display_value="Due Date">c5f2e9920b10030085c083eb37673af9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4f9f245f834512105a90c1d6feaad360</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 23:31:22</sys_created_on>
+        <sys_id>6cff205f834512105a90c1d6feaad3bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-09 23:31:22</sys_updated_on>
+        <value>approval_history</value>
+        <variable display_value="Journal Field">c1f2e9920b10030085c083eb37673ae3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4f9f245f834512105a90c1d6feaad360</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 23:31:22</sys_created_on>
+        <sys_id>a8ff205f834512105a90c1d6feaad3bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-09 23:31:22</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="Approval Field">01f2e9920b10030085c083eb37673ad8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4f9f245f834512105a90c1d6feaad360</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 23:31:22</sys_created_on>
+        <sys_id>e0ff205f834512105a90c1d6feaad3c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-09 23:31:22</sys_updated_on>
+        <value>sc_req_item</value>
+        <variable display_value="Table">bcf2e9920b10030085c083eb37673acc</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4f9f245f834512105a90c1d6feaad360"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_conditions</field>
+        <id>4f9f245f834512105a90c1d6feaad360</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 23:31:22</sys_created_on>
+        <sys_id>64ff205f834512105a90c1d6feaad3bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-09 23:31:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>ApprovesRejectsAnyG[{{static.a715cd759f2002002920bde8132e7018}}]</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_field</field>
+        <id>4f9f245f834512105a90c1d6feaad360</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 23:31:22</sys_created_on>
+        <sys_id>68ff205f834512105a90c1d6feaad3be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-09 23:31:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>due_date</field>
+        <id>4f9f245f834512105a90c1d6feaad360</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 23:31:22</sys_created_on>
+        <sys_id>a0ff205f834512105a90c1d6feaad3bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-09 23:31:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{"action":"none","date_type":"actual","date":"{{}}","duration":1,"duration_type":"days","schedule":"","schedule_label":""}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>journal_field</field>
+        <id>4f9f245f834512105a90c1d6feaad360</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 23:31:22</sys_created_on>
+        <sys_id>2cff205f834512105a90c1d6feaad3be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-09 23:31:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>4f9f245f834512105a90c1d6feaad360</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 23:31:22</sys_created_on>
+        <sys_id>ecff205f834512105a90c1d6feaad3be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-09 23:31:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{{Service Catalog_1.request_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>4f9f245f834512105a90c1d6feaad360</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 23:31:22</sys_created_on>
+        <sys_id>28ff205f834512105a90c1d6feaad3bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-09 23:31:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4f9f245f834512105a90c1d6feaad360"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4f9f245f834512105a90c1d6feaad360"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment>Update RITM to Closed Incomplete</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="SN Group Management Flow">25656cdf830512105a90c1d6feaad319</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>4c084a9c-c9f4-4124-803d-55bbd6525d88</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 22:57:04</sys_created_on>
+        <sys_id>9218e8d3834512105a90c1d6feaad363</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="SN Group Management">c995ae0e972012107b7bb12de053afc6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-10 00:58:35</sys_updated_on>
+        <ui_id>ff1833c7-5343-4187-9a85-0ce5d784c744</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=9218e8d3834512105a90c1d6feaad363"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>9218e8d3834512105a90c1d6feaad363</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 22:57:45</sys_created_on>
+        <sys_id>1c486cd3834512105a90c1d6feaad319</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-09 22:57:45</sys_updated_on>
+        <value>sc_req_item</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>9218e8d3834512105a90c1d6feaad363</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 22:57:45</sys_created_on>
+        <sys_id>58486cd3834512105a90c1d6feaad319</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-09 22:57:45</sys_updated_on>
+        <value>state=4^comments=Cancelling the request as the manager has rejected the approval to create a new group.</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=9218e8d3834512105a90c1d6feaad363"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>9218e8d3834512105a90c1d6feaad363</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 22:57:45</sys_created_on>
+        <sys_id>d4486cd3834512105a90c1d6feaad319</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-09 22:57:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Service Catalog_1.request_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>9218e8d3834512105a90c1d6feaad363</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 22:57:45</sys_created_on>
+        <sys_id>50486cd3834512105a90c1d6feaad319</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-09 22:57:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>9218e8d3834512105a90c1d6feaad363</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 22:57:45</sys_created_on>
+        <sys_id>14486cd3834512105a90c1d6feaad319</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-09 22:57:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=9218e8d3834512105a90c1d6feaad363"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=9218e8d3834512105a90c1d6feaad363"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment>Request group manager</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="SN Group Management Flow">25656cdf830512105a90c1d6feaad319</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>e45dbe5c-31e0-48f3-b813-cb93efc07901</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 22:52:50</sys_created_on>
+        <sys_id>9827e853834512105a90c1d6feaad3b9</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="SN Group Management">c995ae0e972012107b7bb12de053afc6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-10 00:58:35</sys_updated_on>
+        <ui_id>f59fd935-e78e-4ea3-a5c3-4c040da21970</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=9827e853834512105a90c1d6feaad3b9"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>9827e853834512105a90c1d6feaad3b9</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 22:54:21</sys_created_on>
+        <sys_id>2a77ec53834512105a90c1d6feaad3cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-09 22:54:21</sys_updated_on>
+        <value>sc_req_item</value>
+        <variable display_value="Table">bcf2e9920b10030085c083eb37673acc</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>9827e853834512105a90c1d6feaad3b9</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 22:54:21</sys_created_on>
+        <sys_id>6677ec53834512105a90c1d6feaad3cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-09 22:54:21</sys_updated_on>
+        <value/>
+        <variable display_value="Due Date">c5f2e9920b10030085c083eb37673af9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>9827e853834512105a90c1d6feaad3b9</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 22:54:21</sys_created_on>
+        <sys_id>a277ec53834512105a90c1d6feaad3cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-09 22:54:21</sys_updated_on>
+        <value>approval_history</value>
+        <variable display_value="Journal Field">c1f2e9920b10030085c083eb37673ae3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>9827e853834512105a90c1d6feaad3b9</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 22:54:21</sys_created_on>
+        <sys_id>ee77ec53834512105a90c1d6feaad3cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-09 22:54:21</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="Approval Field">01f2e9920b10030085c083eb37673ad8</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=9827e853834512105a90c1d6feaad3b9"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_conditions</field>
+        <id>9827e853834512105a90c1d6feaad3b9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 22:54:21</sys_created_on>
+        <sys_id>aa77ec53834512105a90c1d6feaad3cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-09 22:54:21</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>ApprovesRejectsAnyU[{{81bf0fe9-c2ec-4c0c-9059-e42876068546.u_manager}}]</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_field</field>
+        <id>9827e853834512105a90c1d6feaad3b9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 22:54:21</sys_created_on>
+        <sys_id>ae77ec53834512105a90c1d6feaad3ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-09 22:54:21</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>due_date</field>
+        <id>9827e853834512105a90c1d6feaad3b9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 22:54:21</sys_created_on>
+        <sys_id>e677ec53834512105a90c1d6feaad3cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-09 22:54:21</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{"action":"none","date_type":"actual","date":"{{}}","duration":1,"duration_type":"days","schedule":"","schedule_label":""}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>journal_field</field>
+        <id>9827e853834512105a90c1d6feaad3b9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 22:54:21</sys_created_on>
+        <sys_id>6277ec53834512105a90c1d6feaad3cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-09 22:54:21</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>9827e853834512105a90c1d6feaad3b9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 22:54:21</sys_created_on>
+        <sys_id>2677ec53834512105a90c1d6feaad3cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-09 22:54:21</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{{Service Catalog_1.request_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>9827e853834512105a90c1d6feaad3b9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 22:54:21</sys_created_on>
+        <sys_id>6e77ec53834512105a90c1d6feaad3cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-09 22:54:21</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=9827e853834512105a90c1d6feaad3b9"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=9827e853834512105a90c1d6feaad3b9"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment>Update RITM to Closed Incomplete</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="SN Group Management Flow">25656cdf830512105a90c1d6feaad319</flow>
+        <generation_source/>
+        <order>10</order>
+        <parent_ui_id>a2846c6f-229e-41e4-bf7d-69e203b22be1</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 23:50:12</sys_created_on>
+        <sys_id>e044bc53838512105a90c1d6feaad3d5</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="SN Group Management">c995ae0e972012107b7bb12de053afc6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-10 00:58:35</sys_updated_on>
+        <ui_id>ed798f41-a6da-49ea-99dc-7780446e66c8</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e044bc53838512105a90c1d6feaad3d5"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e044bc53838512105a90c1d6feaad3d5</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 23:51:31</sys_created_on>
+        <sys_id>7b84f4d3838512105a90c1d6feaad39f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-09 23:51:31</sys_updated_on>
+        <value>sc_req_item</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e044bc53838512105a90c1d6feaad3d5</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 23:51:31</sys_created_on>
+        <sys_id>b784f4d3838512105a90c1d6feaad39f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-09 23:51:31</sys_updated_on>
+        <value>state=4^comments=Cancelling the request as the change management group has rejected the approval to create a new knowledge group.</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e044bc53838512105a90c1d6feaad3d5"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>e044bc53838512105a90c1d6feaad3d5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 23:51:31</sys_created_on>
+        <sys_id>3784f4d3838512105a90c1d6feaad39f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-09 23:51:31</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Service Catalog_1.request_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>e044bc53838512105a90c1d6feaad3d5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 23:51:31</sys_created_on>
+        <sys_id>bf84f4d3838512105a90c1d6feaad39e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-09 23:51:31</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>e044bc53838512105a90c1d6feaad3d5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 23:51:31</sys_created_on>
+        <sys_id>7384f4d3838512105a90c1d6feaad39f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-09 23:51:31</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e044bc53838512105a90c1d6feaad3d5"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e044bc53838512105a90c1d6feaad3d5"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
+        <action_type_parent display_value="Create Task">3f9b1ff1531003003bf1d9109ec58775</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="SN Group Management Flow">25656cdf830512105a90c1d6feaad319</flow>
+        <generation_source/>
+        <order>11</order>
+        <parent_ui_id>e45dbe5c-31e0-48f3-b813-cb93efc07901</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 23:54:11</sys_created_on>
+        <sys_id>f2257417838512105a90c1d6feaad305</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="SN Group Management">c995ae0e972012107b7bb12de053afc6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-10 00:58:35</sys_updated_on>
+        <ui_id>a0299131-e74a-4b73-b886-b88b80b5883b</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f2257417838512105a90c1d6feaad305"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f2257417838512105a90c1d6feaad305</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-10 00:58:35</sys_created_on>
+        <sys_id>16e3c19783c512105a90c1d6feaad368</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-10 00:58:35</sys_updated_on>
+        <value>sc_task</value>
+        <variable display_value="Table">e73a6335531003003bf1d9109ec5875c</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=f2257417838512105a90c1d6feaad305"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>field_values</field>
+        <id>f2257417838512105a90c1d6feaad305</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-10 00:58:35</sys_created_on>
+        <sys_id>92e3c19783c512105a90c1d6feaad368</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-10 00:58:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value>request_item={{Service Catalog_1.request_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>task_table</field>
+        <id>f2257417838512105a90c1d6feaad305</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-10 00:58:35</sys_created_on>
+        <sys_id>dae3c19783c512105a90c1d6feaad367</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-10 00:58:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f2257417838512105a90c1d6feaad305"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=f2257417838512105a90c1d6feaad305"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=25656cdf830512105a90c1d6feaad319"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=25656cdf830512105a90c1d6feaad319^sys_idNOT IN53c728d3834512105a90c1d6feaad3a5,5e866cdf830512105a90c1d6feaad304,631fac17834512105a90c1d6feaad3df,72e86cd3834512105a90c1d6feaad31c,78e3f093838512105a90c1d6feaad368"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">dee3c19783c512105a90c1d6feaad34e</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="SN Group Management Flow">25656cdf830512105a90c1d6feaad319</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>e45dbe5c-31e0-48f3-b813-cb93efc07901</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 22:55:47</sys_created_on>
+        <sys_id>53c728d3834512105a90c1d6feaad3a5</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="SN Group Management">c995ae0e972012107b7bb12de053afc6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-10 00:58:35</sys_updated_on>
+        <ui_id>4c084a9c-c9f4-4124-803d-55bbd6525d88</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=53c728d3834512105a90c1d6feaad3a5"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>53c728d3834512105a90c1d6feaad3a5</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 22:56:37</sys_created_on>
+        <sys_id>27f76cd3834512105a90c1d6feaad311</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-09 22:56:37</sys_updated_on>
+        <value>Approval is failed</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=53c728d3834512105a90c1d6feaad3a5"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>53c728d3834512105a90c1d6feaad3a5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 22:56:37</sys_created_on>
+        <sys_id>a3f76cd3834512105a90c1d6feaad311</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-09 22:56:37</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{f59fd935-e78e-4ea3-a5c3-4c040da21970.approval_state}}=rejected</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>53c728d3834512105a90c1d6feaad3a5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 22:56:37</sys_created_on>
+        <sys_id>eff76cd3834512105a90c1d6feaad310</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-09 22:56:37</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=53c728d3834512105a90c1d6feaad3a5"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=53c728d3834512105a90c1d6feaad3a5"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">dee3c19783c512105a90c1d6feaad339</block>
+        <comment>Check if the group is being created</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="SN Group Management Flow">25656cdf830512105a90c1d6feaad319</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 22:50:15</sys_created_on>
+        <sys_id>5e866cdf830512105a90c1d6feaad304</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_scope display_value="SN Group Management">c995ae0e972012107b7bb12de053afc6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-10 00:58:35</sys_updated_on>
+        <ui_id>e45dbe5c-31e0-48f3-b813-cb93efc07901</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=5e866cdf830512105a90c1d6feaad304"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>5e866cdf830512105a90c1d6feaad304</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 22:50:52</sys_created_on>
+        <sys_id>23a6a093834512105a90c1d6feaad338</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-09 22:50:52</sys_updated_on>
+        <value>Create Group</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=5e866cdf830512105a90c1d6feaad304"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>5e866cdf830512105a90c1d6feaad304</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 22:50:52</sys_created_on>
+        <sys_id>afa6a093834512105a90c1d6feaad337</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-09 22:50:52</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{81bf0fe9-c2ec-4c0c-9059-e42876068546.u_create_update_grp}}=u_create_grp</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>5e866cdf830512105a90c1d6feaad304</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 22:50:52</sys_created_on>
+        <sys_id>eba6a093834512105a90c1d6feaad337</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-09 22:50:52</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=5e866cdf830512105a90c1d6feaad304"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5e866cdf830512105a90c1d6feaad304"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">96e3c19783c512105a90c1d6feaad35a</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="SN Group Management Flow">25656cdf830512105a90c1d6feaad319</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>e45dbe5c-31e0-48f3-b813-cb93efc07901</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 23:27:44</sys_created_on>
+        <sys_id>631fac17834512105a90c1d6feaad3df</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_scope display_value="SN Group Management">c995ae0e972012107b7bb12de053afc6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-10 00:58:35</sys_updated_on>
+        <ui_id>4302f208-b7ff-4584-b7d7-685299212260</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=631fac17834512105a90c1d6feaad3df"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>631fac17834512105a90c1d6feaad3df</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 23:29:07</sys_created_on>
+        <sys_id>636f205f834512105a90c1d6feaad353</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-09 23:43:08</sys_updated_on>
+        <value>Creating a Knowledge Group</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=631fac17834512105a90c1d6feaad3df"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>631fac17834512105a90c1d6feaad3df</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 23:29:07</sys_created_on>
+        <sys_id>ef6f205f834512105a90c1d6feaad352</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-09 23:43:08</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{81bf0fe9-c2ec-4c0c-9059-e42876068546.u_grp_type}}=knowledge</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>631fac17834512105a90c1d6feaad3df</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 23:29:07</sys_created_on>
+        <sys_id>2b6f205f834512105a90c1d6feaad352</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-09 23:29:07</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=631fac17834512105a90c1d6feaad3df"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=631fac17834512105a90c1d6feaad3df"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">16e3c19783c512105a90c1d6feaad355</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="SN Group Management Flow">25656cdf830512105a90c1d6feaad319</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>4c084a9c-c9f4-4124-803d-55bbd6525d88</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 23:00:39</sys_created_on>
+        <sys_id>72e86cd3834512105a90c1d6feaad31c</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="SN Group Management">c995ae0e972012107b7bb12de053afc6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-10 00:58:35</sys_updated_on>
+        <ui_id>8157ce71-e269-499a-8f96-d7f7c3743c76</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=72e86cd3834512105a90c1d6feaad31c"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=72e86cd3834512105a90c1d6feaad31c"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=72e86cd3834512105a90c1d6feaad31c"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">9ee3c19783c512105a90c1d6feaad361</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="SN Group Management Flow">25656cdf830512105a90c1d6feaad319</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>4302f208-b7ff-4584-b7d7-685299212260</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 23:48:34</sys_created_on>
+        <sys_id>78e3f093838512105a90c1d6feaad368</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="SN Group Management">c995ae0e972012107b7bb12de053afc6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-10 00:58:35</sys_updated_on>
+        <ui_id>a2846c6f-229e-41e4-bf7d-69e203b22be1</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=78e3f093838512105a90c1d6feaad368"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>78e3f093838512105a90c1d6feaad368</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 23:49:43</sys_created_on>
+        <sys_id>69247893838512105a90c1d6feaad314</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-09 23:49:43</sys_updated_on>
+        <value>Approval is failed</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=78e3f093838512105a90c1d6feaad368"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>78e3f093838512105a90c1d6feaad368</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 23:49:43</sys_created_on>
+        <sys_id>e5247893838512105a90c1d6feaad314</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-09 23:49:43</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{a8f6370d-0dae-422e-aec5-8627dfb79fb7.approval_state}}=rejected</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>78e3f093838512105a90c1d6feaad368</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 23:49:43</sys_created_on>
+        <sys_id>25247893838512105a90c1d6feaad314</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-09 23:49:43</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=78e3f093838512105a90c1d6feaad368"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=78e3f093838512105a90c1d6feaad368"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=25656cdf830512105a90c1d6feaad319"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=25656cdf830512105a90c1d6feaad319"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_25656cdf830512105a90c1d6feaad319^sys_idNOT IN8ee3c19783c512105a90c1d6feaad327,cee3c19783c512105a90c1d6feaad32d"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>request_item</element>
+        <help/>
+        <hint/>
+        <label>Request Item</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_25656cdf830512105a90c1d6feaad319</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-10 00:58:34</sys_created_on>
+        <sys_id>8ee3c19783c512105a90c1d6feaad327</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SN Group Management" source="x_393895_sn_group">c995ae0e972012107b7bb12de053afc6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SN Group Management">c995ae0e972012107b7bb12de053afc6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-10 00:58:34</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_25656cdf830512105a90c1d6feaad319</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-10 00:58:34</sys_created_on>
+        <sys_id>cee3c19783c512105a90c1d6feaad32d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SN Group Management" source="x_393895_sn_group">c995ae0e972012107b7bb12de053afc6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SN Group Management">c995ae0e972012107b7bb12de053afc6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-10 00:58:34</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_25656cdf830512105a90c1d6feaad319"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_25656cdf830512105a90c1d6feaad319"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_25656cdf830512105a90c1d6feaad319"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=25656cdf830512105a90c1d6feaad319"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=25656cdf830512105a90c1d6feaad319"/>
+</record_update>

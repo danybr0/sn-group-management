@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item">
+    <io_set_item action="INSERT_OR_UPDATE">
+        <order>100</order>
+        <sc_cat_item display_value="SN Group Management">272fcc9383c112105a90c1d6feaad371</sc_cat_item>
+        <sys_class_name>io_set_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-09 21:18:07</sys_created_on>
+        <sys_id>7651dc5783c112105a90c1d6feaad350</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service catalog requestor details.SN Group Management</sys_name>
+        <sys_package display_value="SN Group Management" source="x_393895_sn_group">c995ae0e972012107b7bb12de053afc6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SN Group Management">c995ae0e972012107b7bb12de053afc6</sys_scope>
+        <sys_update_name>io_set_item_7651dc5783c112105a90c1d6feaad350</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-09 21:18:07</sys_updated_on>
+        <variable_set display_value="Service catalog requestor details">7def001783c112105a90c1d6feaad317</variable_set>
+    </io_set_item>
+</record_update>
