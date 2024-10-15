@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="SN Group Management">272fcc9383c112105a90c1d6feaad371</catalog_item>
+        <catalog_variable>IO:ab6a9053830512105a90c1d6feaad3a1</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>ignore</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-10 22:47:29</sys_created_on>
+        <sys_id>897fa927838112105a90c1d6feaad3a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_select_grp</sys_name>
+        <sys_package display_value="SN Group Management" source="x_393895_sn_group">c995ae0e972012107b7bb12de053afc6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SN Group Management">c995ae0e972012107b7bb12de053afc6</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_897fa927838112105a90c1d6feaad3a9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-10 22:47:29</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Hide 'Select Group' for creating new group">7f2f2527838112105a90c1d6feaad3bc</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <variable>u_select_grp</variable>
+        <variable_set/>
+        <visible>false</visible>
+    </catalog_ui_policy_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=897fa927838112105a90c1d6feaad3a9"/>
+</record_update>
